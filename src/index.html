@@ -1,0 +1,120 @@
+
+<!DOCTYPE html>
+<html lang = "ru">
+<head>
+    <meta charset = "UTF-8">
+    <meta name = "viewport" content = "width=device-width, initial-scale=1.0">
+    <title>Лаборатория КТиСС | ТулГУ</title>
+    <link rel = "stylesheet" href = "style.css">
+    <link rel = "preconnect" href = "https://fonts.googleapis.com">
+    <link rel = "preconnect" href = "https://fonts.gstatic.com" crossorigin>
+    <link href = "https://fonts.googleapis.com/css2?family=Onest:wght@400;500;600;700&display=swap" rel = "stylesheet">
+</head>
+
+<body>
+
+<header class = "header">
+    <div class = "header-inner">
+        <a href = "https://tulsu.ru/" class = "university-logo">
+            <img
+                src = "https://tulsu.ru/themes/university/assets/img/Logo.png"
+                alt = "Тульский государственный университет"
+            >
+        </a>
+        <div class = "header-title">
+            <a href = "https://tulsu.ru/molodezhnye-nauchnye-laboratorii/laboratoriya-kognitivnyh-tehnologij-i-simulyacionnyh-sistem">
+                Лаборатория когнитивных технологий и симуляционных систем
+            </a>
+        </div>
+    </div>
+</header>
+
+<main class = "main">
+
+    <section class = "intro">
+        <p class = "text text--lead">
+            Молодёжная лаборатория когнитивных технологий и симуляционных систем (лаборатория КТиСС)
+            научно-исследовательского центра «БиоХимТех» федерального государственного бюджетного
+            образовательного учреждения высшего образования «Тульский государственный университет».
+        </p>
+        <p class = "text text--lead">
+            <b>Целью научных исследований</b> лаборатории является создание новых математических
+            моделей, методов, алгоритмов и инструментальных средств на основе машинного обучения
+            и компьютерного зрения для построения интеллектуальных систем и комплексов.
+        </p>
+    </section>
+
+    <section class = "projects">
+        <h2 class = "heading heading--section">Актуальные разработки и проекты</h2>
+
+        <div class = "projects-grid">
+            <article class = "project">
+                <h3 class = "heading heading--card">Анализ наночастиц</h3>
+                <p class = "text">
+                    Программный инструмент для обработки изображений, полученных с помощью
+                    электронного микроскопа. Позволяет автоматически определять размеры отдельных
+                    наночастиц и анализировать их распределение по размерам.
+                </p>
+                <a href = "https://ctss.tulsu.ru/nano/" class = "project-link" target = "_blank" rel = "noopener noreferrer">
+                    Перейти к инструменту →
+                </a>
+            </article>
+
+            <article class = "project">
+                <h3 class = "heading heading--card">Анализ биоплёнок</h3>
+                <p class = "text">
+                    Инструмент для анализа микроскопических изображений биоплёнок,
+                    позволяющий исследовать их структуру и количественные характеристики на уровне
+                    отдельных объектов и всей области изображения.
+                </p>
+                <a href = "https://ctss.tulsu.ru/biofilms/" class = "project-link" target = "_blank" rel = "noopener noreferrer">
+                    Перейти к инструменту →
+                </a>
+            </article>
+            
+            <article class = "project">
+                <h3 class = "heading heading--card">Анализ изображений листьев</h3>
+                <p class = "text">
+                    Программный инструмент для анализа изображений листьев, предназначенный для оценки
+                    их визуальных характеристик и использования результатов при экологическом мониторинге.
+                </p>
+                <a href = "https://ctss.tulsu.ru/leaves/" class = "project-link" target = "_blank" rel = "noopener noreferrer">
+                    Перейти к инструменту →
+                </a>
+            </article>
+        </div>
+    </section>
+
+    <section class = "links">
+        <h2 class = "heading heading--section">Дополнительная информация</h2>
+
+        <a href = "https://tulsu.ru/polytech/sectors/222" class = "link">
+            <h2 class = "heading heading--card">О подразделении</h2>
+            <p class = "text">
+                Основные направления деятельности, задачи и сведения
+                о лаборатории на сайте университета.
+            </p>
+        </a>
+        <a href = "https://ctss.tulsu.ru/recent.html" class = "link" target = "_blank" rel = "noopener noreferrer">
+            <h2 class = "heading heading--card">Архив лаборатории</h2>
+            <p class = "text">
+                Материалы и разработки лаборатории анализа данных.
+            </p>
+        </a>
+    </section>
+
+</main>
+
+<footer class = "footer">
+    <div class = "footer-inner text text--small">
+        © 2021–<span id = "current-year"></span> Тульский государственный университет,
+        Лаборатория когнитивных технологий и симуляционных систем
+    </div>
+</footer>
+
+<script>
+    document.getElementById('current-year').textContent = new Date().getFullYear();
+</script>
+
+</body>
+</html>
