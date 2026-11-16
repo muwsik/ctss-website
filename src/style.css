@@ -2,7 +2,7 @@
 :root {
     --color-primary: rgb(137 36 34);
     --color-text: #333;
-    --color-muted: #777;
+    --color-muted: #666;
     --color-border: #ddd;
     --radius: 5px;
 }
@@ -34,24 +34,26 @@ a {
 .heading--section {
     margin-bottom: 20px;
     font-size: 28px;
+    text-align: center;
 }
 
 .heading--card {
     margin-bottom: 10px;
     font-size: 21px;
+    
 }
 
 .text {
     margin: 0;
     font-size: 16px;
     line-height: 1.6;
-    color: #666;
+    color: var(--color-text);    
+    text-align: justify;
 }
 
 .text--lead {
     font-size: 20px;
     line-height: 1.7;
-    text-align: justify;
 }
 
 .text--small {
@@ -67,30 +69,30 @@ a {
 }
 
 .header-inner {
-    position: relative;
     display: flex;
     align-items: center;
     justify-content: center;
+    gap: 20px;
     width: 100%;
     padding: 20px 30px;
 }
 
 .university-logo {
-    position: absolute;
-    left: 30px;
+    flex-shrink: 0;
+}
+
+.header-title {
+    flex: 1;
+    font-size: 32px;
+    font-weight: 600;
+    color: #fff;
+    text-align: center;
 }
 
 .university-logo img {
     display: block;
     width: 160px;
     height: auto;
-}
-
-.header-title {
-    font-size: 32px;
-    font-weight: 600;
-    color: #fff;
-    text-align: center;
 }
 
 /* Main */
@@ -112,6 +114,18 @@ a {
 }
 
 /* Projects */
+
+.presentation {
+    width: 100%;
+    margin-bottom: 30px;
+}
+
+.presentation-viewer {
+    display: block;
+    width: 100%;
+    height: 90vh;
+    border: none;
+}
 
 .projects {
     margin-bottom: 30px;
@@ -185,4 +199,11 @@ a {
     margin: 0 auto;
     padding: 25px 30px;
     text-align: center;
+}
+
+@media (max-width: 950px) {
+    .projects-grid,
+    .links {
+        grid-template-columns: 1fr;
+    }
 }
